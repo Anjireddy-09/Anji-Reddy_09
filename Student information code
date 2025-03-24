@@ -1,0 +1,67 @@
+using System;
+
+namespace Project_240325
+{
+    class Program
+    {
+        static void Main()
+        {
+            
+            
+
+                string studentID, name, gender, education, email, mobile, address;
+                int age;
+
+                Console.WriteLine("Please enter the following information:");
+
+
+                Console.Write("Student ID: ");
+                studentID = Console.ReadLine();
+
+
+                Console.Write("Name: ");
+                name = Console.ReadLine();
+
+
+                Console.Write("Age: ");
+                while (!int.TryParse(Console.ReadLine(), out age))
+                {
+                    Console.Write("Invalid input. Please enter a valid age: ");
+                }
+
+
+                Console.Write("Gender (Male/Female/Other): ");
+                gender = Console.ReadLine();
+
+
+                Console.Write("Education (High School/College/Graduate): ");
+                education = Console.ReadLine();
+
+
+                Console.Write("Email ID: ");
+                email = Console.ReadLine();
+
+
+                Console.Write("Mobile Number: ");
+                mobile = Console.ReadLine();
+
+
+                Console.WriteLine("Address: ");
+                address = Console.ReadLine();
+
+
+                Console.WriteLine("\nEntered Information:");
+                Console.WriteLine($"Student ID: {studentID}");
+                Console.WriteLine($"Name: {name}");
+                Console.WriteLine($"Age: {age}");
+                Console.WriteLine($"Gender: {gender}");
+                Console.WriteLine($"Education: {education}");
+                Console.WriteLine($"Email ID: {email}");
+                Console.WriteLine($"Mobile Number: {mobile}");
+                Console.WriteLine($"Address: {address}");
+
+                Console.ReadKey();
+            }
+        }
+    }
+
